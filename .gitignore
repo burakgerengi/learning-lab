@@ -1,0 +1,28 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# maven
+target/
+*.class
+*.jar
+
+# ide
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# temporary files
+*.log
+*.swp
+*.swo
+file.txt
+database.json
+
+# os
+.DS_Store
+Thumbs.db
