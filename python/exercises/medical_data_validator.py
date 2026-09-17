@@ -2,28 +2,30 @@ import re
 import json
 import os
 
-DB_FILE = "medical_records.json"
+# FIXME: fix database file creation
+
+# DB_FILE = "medical_records.json"
 
 # ========================
 # DATABASE
 # ========================
 
 
-def load_records():
-    if not os.path.exists(DB_FILE):
-        return []
-    try:
-        with open(DB_FILE, "r") as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        print("Warning: Corrupted database, starting fresh")
-        return []
-
-
-def save_records(records):
-    with open(DB_FILE, "w") as f:
-        json.dump(records, f, indent=4)
-    print(f"Saved {len(records)} record(s)")
+# def load_records():
+#    if not os.path.exists(DB_FILE):
+#        return []
+#    try:
+#        with open(DB_FILE, "r") as f:
+#            return json.load(f)
+#    except json.JSONDecodeError:
+#        print("Warning: Corrupted database, starting fresh")
+#        return []
+#
+#
+# def save_records(records):
+#    with open(DB_FILE, "w") as f:
+#        json.dump(records, f, indent=4)
+#    print(f"Saved {len(records)} record(s)")
 
 
 # ========================
