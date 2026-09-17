@@ -1,3 +1,6 @@
+<img width="1200" height="300" alt="learning-lab" src="https://github.com/user-attachments/assets/f85f8e3a-7d5b-44c3-bfbf-1bc6ee618102" />
+
+
 # learning-lab
 
 A personal repository for programming practice, experiments, exercises, and small projects created while learning computer science and software development.
