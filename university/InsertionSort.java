@@ -1,30 +1,37 @@
 import java.util.Arrays;
 import java.util.Random;
-import java.util.random.*;
-
-// FIXME: fix the code errors.
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int dizi[] = new int[15];
+        // create an array of random numbers
+        int random_numbers[] = new int[30];
         Random rnd = new Random();
-        for (int i = 0; i < dizi.length; i++) {
-            dizi[i] = rnd.nextInt(51);
+        for (int i = 0; i < random_numbers.length; i++) {
+            random_numbers[i] = rnd.nextInt(100);
         }
-        System.out.println(Arrays.toString(dizi));
-        System.out.println(sort(dizi));
-    }
-}
+        print_arr(random_numbers);
+        insertion_sort(random_numbers);
+        print_arr(random_numbers);
 
-public static void sort(int arr[]) {
+    }
+
+
+public static void insertion_sort(int arr[]) {
     for (int j = 1; j < arr.length; j++) {
         int key = arr[j];
         int i = j - 1;
 
         while (i >= 0 && arr[i] > key) {
-            arr[i + 1] = arr[i];
+            arr[i+1] = arr[i];
             i--;
         }
-        arr[i] = key;
+        arr[i+1] = key;
     }
+}
+
+public static void print_arr(int arr[])
+{
+    System.out.println(Arrays.toString(arr));
+}
+
 }
