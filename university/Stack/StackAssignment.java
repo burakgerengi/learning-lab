@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class StackAssignment
 {
 
+    private static int matchedPairs = 0;
+
     private static final char[] openingBrackets = { '(', '[', '{' };
     private static final char[] closingBrackets = { ')', ']', '}' };
 
@@ -13,7 +15,7 @@ public class StackAssignment
 
         if (isBalanced (expression))
             {
-                System.out.println ("Valid brackets.");
+                System.out.println ("Valid brackets, matched pairs: " + matchedPairs);
             }
         else
             {
@@ -62,6 +64,7 @@ public class StackAssignment
                         if (matches (top, ch))
                             {
                                 stack.pop ();
+                                matchedPairs++; 
                             }
 
                         else
