@@ -26,3 +26,4 @@ database.json
 # os
 .DS_Store
 Thumbs.db
+test.txt
